@@ -2,6 +2,7 @@
   (:gen-class)
   (:require [clojure.edn :as edn]
             [clojure.core.async :as ch :refer [chan close!]]
+            [clojure.java.io :as io]
             [discljord.messaging :as discord-rest]
             [discljord.connections :as discord-ws]
             [discljord.formatting :refer [mention-user]]
@@ -11,7 +12,7 @@
 
 (def bot-id (atom nil))
 
-(def config (edn/read-string (slurp "config.edn")))
+(def config (edn/read-string (slurp (io/resource "config.edn"))))
 
 (defn random-response [user]
   (str (rand-nth (:responses config)) ", " (mention-user user) \!))

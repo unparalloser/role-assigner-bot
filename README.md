@@ -4,7 +4,7 @@ A Discord bot that assigns roles based on the reactions to a particular message,
 
 ## Usage
 
-Before using the bot, 'config.edn' file should be created and filled in according to the 'config_template.edn' file. To easily fill in the blanks, enable the Discord Developer mode in User settings -> Appearance.
+Before using the bot, `config.edn` file should be created in `resources` directory and filled in according to the `config_template.edn` file. To easily fill in the blanks, enable the Discord Developer mode in User settings -> Appearance.
 
 And don't forget to give the bot a role with the right to assign and remove roles!
 
