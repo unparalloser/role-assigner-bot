@@ -1,0 +1,4 @@
+{:token "TOKEN" ; https://discord.com/developers/applications -> Bot -> Token
+ :roles-message-id "MESSAGE_ID" ; The id of a message to which people should leave reaction to get a role
+ :emojis->roles {"EMOJI_NAME" "ROLE_ID"}
+ :responses ["Hello there" "Hiiii" "Aloha" "Yo" "Hi" "Hey there" "Hey" "Oi" "Greetings" "Salutations" "Ah, it's you" "Ahoy"]}
